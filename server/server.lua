@@ -10,7 +10,7 @@ local function versionCheckPrint(_type, log)
 end
 
 local function CheckVersion()
-    PerformHttpRequest('https://raw.githubusercontent.com/RetryR1v2/mms-schatzsuche/main/version.txt', function(err, text, headers)
+    PerformHttpRequest('https://raw.githubusercontent.com/RetryR1v2/mms-moonshine/main/version.txt', function(err, text, headers)
         local currentVersion = GetResourceMetadata(GetCurrentResourceName(), 'version')
 
         if not text then 
@@ -18,12 +18,12 @@ local function CheckVersion()
             return 
         end
 
-        versionCheckPrint('success', ('Current Version: %s'):format(currentVersion))
-        versionCheckPrint('success', ('Latest Version: %s'):format(text))
-        
+      
         if text == currentVersion then
             versionCheckPrint('success', 'You are running the latest version.')
         else
+            versionCheckPrint('error', ('Current Version: %s'):format(currentVersion))
+            versionCheckPrint('success', ('Latest Version: %s'):format(text))
             versionCheckPrint('error', ('You are currently running an outdated version, please update to version %s'):format(text))
         end
     end)
