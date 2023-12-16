@@ -1,0 +1,5 @@
+ -- mms-moonshine
+  
+    ['weizenmaische']  = {['name'] = 'weizenmaische',  ['label'] = 'Weizen Maische',  ['weight'] = 0,  ['type'] = 'item', ['image'] = 'weizenmaische.png',  ['unique'] = false, ['useable'] = false,  ['shouldClose'] = false, ['combinable'] = nil, ['level'] = 0, ['description'] = 'Schwarzbrenner bedarf!'},
+    ['weizenwhiskey']  = {['name'] = 'weizenwhiskey',  ['label'] = 'Weizen Whiskey',  ['weight'] = 0,  ['type'] = 'item', ['image'] = 'weizenwhiskey.png',  ['unique'] = false, ['useable'] = false,  ['shouldClose'] = false, ['combinable'] = nil, ['level'] = 0, ['description'] = 'Schwarzgebrannter Whiskey'},
+      
